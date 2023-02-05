@@ -1,18 +1,15 @@
-package com.acserita.authservice.service;
+package com.acsertia.authservice.service;
 
-import com.acserita.authservice.dto.UsersDTO;
-import com.acserita.authservice.entities.Users;
-import com.acserita.authservice.mapper.AuthMaper;
-import com.acserita.authservice.repository.UsersRepository;
+import com.acsertia.authservice.dto.UsersDTO;
+import com.acsertia.authservice.entities.Users;
+import com.acsertia.authservice.mapper.AuthMaper;
+import com.acsertia.authservice.repository.UsersRepository;
 //import io.jsonwebtoken.Jwts;
 //import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 
 @Service

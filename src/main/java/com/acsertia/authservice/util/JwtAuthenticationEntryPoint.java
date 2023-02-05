@@ -1,4 +1,4 @@
-package com.acserita.authservice.util;
+package com.acsertia.authservice.util;
 
 
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,7 +1,6 @@
-package com.acserita.authservice.filter;
+package com.acsertia.authservice.filter;
 
-import com.acserita.authservice.util.AuthUtil;
-import com.acserita.authservice.service.AuthService;
+import com.acsertia.authservice.util.AuthUtil;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

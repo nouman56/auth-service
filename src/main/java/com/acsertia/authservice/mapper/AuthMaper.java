@@ -1,7 +1,7 @@
-package com.acserita.authservice.mapper;
+package com.acsertia.authservice.mapper;
 
-import com.acserita.authservice.dto.UsersDTO;
-import com.acserita.authservice.entities.Users;
+import com.acsertia.authservice.dto.UsersDTO;
+import com.acsertia.authservice.entities.Users;
 import org.springframework.stereotype.Component;
 
 @Component

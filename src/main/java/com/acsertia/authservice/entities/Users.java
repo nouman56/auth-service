@@ -1,4 +1,4 @@
-package com.acserita.authservice.entities;
+package com.acsertia.authservice.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

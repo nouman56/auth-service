@@ -1,7 +1,7 @@
-package com.acserita.authservice.util;
+package com.acsertia.authservice.util;
 
-import com.acserita.authservice.entities.Users;
-import com.acserita.authservice.repository.UsersRepository;
+import com.acsertia.authservice.entities.Users;
+import com.acsertia.authservice.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

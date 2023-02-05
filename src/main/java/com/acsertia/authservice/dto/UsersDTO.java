@@ -1,4 +1,4 @@
-package com.acserita.authservice.dto;
+package com.acsertia.authservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

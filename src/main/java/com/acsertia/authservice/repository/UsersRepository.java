@@ -1,6 +1,6 @@
-package com.acserita.authservice.repository;
+package com.acsertia.authservice.repository;
 
-import com.acserita.authservice.entities.Users;
+import com.acsertia.authservice.entities.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

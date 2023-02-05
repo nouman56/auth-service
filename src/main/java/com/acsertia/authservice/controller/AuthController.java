@@ -1,26 +1,19 @@
-package com.acserita.authservice.controller;
+package com.acsertia.authservice.controller;
 
-import com.acserita.authservice.util.AuthUtil;
-import com.acserita.authservice.dto.JwtResponse;
-import com.acserita.authservice.dto.UsersDTO;
-import com.acserita.authservice.entities.Users;
-import com.acserita.authservice.repository.UsersRepository;
-import com.acserita.authservice.service.AuthService;
-import com.acserita.authservice.util.UserDetailImp;
+import com.acsertia.authservice.util.AuthUtil;
+import com.acsertia.authservice.dto.JwtResponse;
+import com.acsertia.authservice.dto.UsersDTO;
+import com.acsertia.authservice.repository.UsersRepository;
+import com.acsertia.authservice.service.AuthService;
+import com.acsertia.authservice.util.UserDetailImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")

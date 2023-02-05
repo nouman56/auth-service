@@ -1,4 +1,4 @@
-package com.acserita.authservice.dto;
+package com.acsertia.authservice.dto;
 
 import java.io.Serializable;
 

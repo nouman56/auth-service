@@ -1,11 +1,10 @@
-package com.acserita.authservice.config;
+package com.acsertia.authservice.config;
 
-import com.acserita.authservice.filter.JwtFilter;
-import com.acserita.authservice.util.JwtAuthenticationEntryPoint;
+import com.acsertia.authservice.filter.JwtFilter;
+import com.acsertia.authservice.util.JwtAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -18,7 +17,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 
 import java.util.ArrayList;
@@ -61,11 +59,8 @@ public class WebSecurityConfig extends AbstractSecurityWebApplicationInitializer
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
          http.csrf().disable()
-                 .authorizeRequests().anyRequest().permitAll()
-//                 .requestMatchers("/h2-console/**","/api/create-user","/api/signup","/api/login").permitAll().
-//                        .anyRequest()
-//                 .authenticated().and().
-        .and().
+                 .authorizeRequests().requestMatchers("/h2-console/**","/api/create-user","/api/login").permitAll()
+                .and().
                         exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.headers().frameOptions().disable();
